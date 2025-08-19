@@ -52,6 +52,6 @@ Output:
 ![Multiplication](https://github.com/jinaljain0705/UDF/blob/main/Output/Multiplaction.png)
 ![Multi-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Multi-ans.png)
 ![Division](https://github.com/jinaljain0705/UDF/blob/main/Output/Division.png)
-![Div-ans]()
+![Div-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Div-ans.png)
 ![Modulus]()
 ![Modu-ans]()
