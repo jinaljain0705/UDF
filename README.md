@@ -47,7 +47,7 @@ Output:
 ![Calculator](https://github.com/jinaljain0705/UDF/blob/main/Output/Calculator.png)
 ![Addition](https://github.com/jinaljain0705/UDF/blob/main/Output/Addition.png)
 ![Add-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Add-ans.png)
-![Subtraction]()
+![Subtraction](https://github.com/jinaljain0705/UDF/blob/main/Output/Subtraction.png)
 ![Sub-ans]()
 ![Multiplication]()
 ![Multi-ans]()
