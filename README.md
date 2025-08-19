@@ -54,4 +54,4 @@ Output:
 ![Division](https://github.com/jinaljain0705/UDF/blob/main/Output/Division.png)
 ![Div-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Div-ans.png)
 ![Modulus](https://github.com/jinaljain0705/UDF/blob/main/Output/Modulus.png)
-![Modu-ans]()
+![Modu-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Modu-ans.png)
