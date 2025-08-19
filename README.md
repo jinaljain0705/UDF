@@ -50,7 +50,7 @@ Output:
 ![Subtraction](https://github.com/jinaljain0705/UDF/blob/main/Output/Subtraction.png)
 ![Sub-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Sub-ans.png)
 ![Multiplication](https://github.com/jinaljain0705/UDF/blob/main/Output/Multiplaction.png)
-![Multi-ans]()
+![Multi-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Multi-ans.png)
 ![Division]()
 ![Div-ans]()
 ![Modulus]()
