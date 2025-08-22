@@ -1,4 +1,5 @@
 const display = document.getElementById("display");
+const outputBox = document.getElementById("outputBox");
 
 function append(value) {
   display.value += value;
@@ -6,60 +7,68 @@ function append(value) {
 
 function clearDisplay() {
   display.value = "";
+  outputBox.innerText = "Result will appear here";
 }
 
 function deleteLast() {
   display.value = display.value.slice(0, -1);
 }
 
+// Normal Arithmetic Calculator
 function calculate() {
-  let expr = display.value;
-  let parts = [];
-  let number = "";
-
-  for (let i = 0; i < expr.length; i++) {
-    let ch = expr[i];
-    if ((ch >= "0" && ch <= "9") || ch === ".") {
-      number += ch;
-    } else {
-      if (number !== "") {
-        parts[parts.length] = parseFloat(number);
-        number = "";
-      }
-      parts[parts.length] = ch;
-    }
+  try {
+    let result = eval(display.value);
+    display.value = result;
+    outputBox.innerText = "Answer: " + result;
+    console.log("Answer:", result);
+  } catch {
+    outputBox.innerText = "Error!";
   }
-  if (number !== "") {
-    parts[parts.length] = parseFloat(number);
+}
+
+// Square
+function square() {
+  let num = parseFloat(display.value);
+  if (!isNaN(num)) {
+    let result = num * num;
+    outputBox.innerText = `Square of ${num} = ${result}`;
+    console.log("Square:", result);
   }
+}
 
-  for (let i = 0; i < parts.length; i++) {
-    if (parts[i] === "*" || parts[i] === "/" || parts[i] === "%") {
-      let left = parts[i - 1];
-      let right = parts[i + 1];
-      let result = 0;
-
-      if (parts[i] === "*") result = left * right;
-      if (parts[i] === "/") result = right !== 0 ? left / right : "Error";
-      if (parts[i] === "%") result = left % right;
-
-      let newArr = [];
-      for (let j = 0; j < i - 1; j++) newArr[newArr.length] = parts[j];
-      newArr[newArr.length] = result;
-      for (let j = i + 2; j < parts.length; j++)
-        newArr[newArr.length] = parts[j];
-      parts = newArr;
-      i = -1;
-    }
+// Cube
+function cube() {
+  let num = parseFloat(display.value);
+  if (!isNaN(num)) {
+    let result = num * num * num;
+    outputBox.innerText = `Cube of ${num} = ${result}`;
+    console.log("Cube:", result);
   }
+}
 
-  let result = parts[0];
-  for (let i = 1; i < parts.length; i += 2) {
-    let op = parts[i];
-    let num = parts[i + 1];
-    if (op === "+") result = result + num;
-    if (op === "-") result = result - num;
+// Factorial
+function factorialCalc(n) {
+  if (n === 0 || n === 1) return 1;
+  return n * factorialCalc(n - 1);
+}
+
+function factorial() {
+  let num = parseInt(display.value);
+  if (!isNaN(num) && num >= 0) {
+    let result = factorialCalc(num);
+    outputBox.innerText = `Factorial of ${num} = ${result}`;
+    console.log("Factorial:", result);
+  } else {
+    outputBox.innerText = "Enter a positive integer!";
   }
+}
 
-  display.value = result;
+// Even/Odd Checker
+function checkEvenOdd() {
+  let num = parseInt(display.value);
+  if (!isNaN(num)) {
+    let result = num % 2 === 0 ? "Even" : "Odd";
+    outputBox.innerText = `${num} is ${result}`;
+    console.log("Even/Odd:", result);
+  }
 }
