@@ -55,3 +55,8 @@ Output:
 ![Div-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Div-ans.png)
 ![Modulus](https://github.com/jinaljain0705/UDF/blob/main/Output/Modulus.png)
 ![Modu-ans](https://github.com/jinaljain0705/UDF/blob/main/Output/Modu-ans.png)
+![Square](https://github.com/jinaljain0705/UDF/blob/main/Output/Square.png)
+![Cube](https://github.com/jinaljain0705/UDF/blob/main/Output/Cube.png)
+![Factorial](https://github.com/jinaljain0705/UDF/blob/main/Output/Factorial.png)
+![EvenOdd](https://github.com/jinaljain0705/UDF/blob/main/Output/EvenOdd.png)
+
